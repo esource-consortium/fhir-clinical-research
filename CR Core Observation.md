@@ -10,10 +10,18 @@ The following are example usage scenarios for the CR Core-Results profile:
 
 - Query for lab results belonging to all Patients on a clinical trial
 
+**Request**
 ```
 GET 
 [base]/observations?researchstudy=12-345
 ```
+
+**Response**
+
+
+<hr>
+
+
 
 - Query for lab results belonging to a specific Patient on a clinical trial
 

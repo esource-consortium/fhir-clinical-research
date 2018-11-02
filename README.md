@@ -7,6 +7,7 @@ The FHIR profiles referenced in this guide are closely aligned with the profiles
 
 The main distinguishing factor of the profiles contained in this guide is the emphasis on de-identification of patient data, and the usage/adoption of the "Research" FHIR Resources ``ResourceSubject`` and ``ResearchStudy``. 
 
+FHIR servers must ensure that all lab results are associated with a protocol. Non protocol specific lab results SHOULD NOT be returned.
 
 ## Use Cases
 This implementation guide describes several use cases and sets search expectations for each.
