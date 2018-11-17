@@ -1,4 +1,4 @@
-# eSource Consortium FHIR for Local Labs
+# eSource Consortium - FHIR for Clinical Research 
 ## Overview
 
 This implementation guide is based on FHIR Version 3.0.1 and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.
