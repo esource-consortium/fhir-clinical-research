@@ -1,4 +1,4 @@
-## CR Core Observation
+## CR Core VitalSigns
 
 This FHIR profile sets minimum expectations for the [Observation](http://hl7.org/fhir/observation.html) resource resource to search / fetch vital sign measurements associated with a patient on a clinical trial. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile.
 
