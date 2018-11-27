@@ -2,6 +2,9 @@
 
 This section outlines important definitions and interpretations used in the CR Core IG.
 
+### **Clinical Trial** vs. **Study** vs. **Protocol** vs. **ResearchStudy**
+For the purposes of this implementation guide, the terms **clinical trial**, **study**, and **protocol** are considered equivalent. The FHIR representation of these terms **SHALL** be interpreted as ``ResearchStudy`` (*See: https://www.hl7.org/fhir/researchsubject.html*)
+
 ### De-identification of Patient data
 One of the primary requirements that this implementation guide seeks to outline and provide guidance for is the de-identification of clinical trial participant data. Typically, "patient" data is captured in the ``Patient`` resource, which includes demographic and other types of information that determine who the individual is:
 
