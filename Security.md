@@ -13,6 +13,7 @@ Implementers should be aware of the security considerations associated with FHIR
 - [Narrative](http://hl7.org/fhir/security.html#narrative)
 
 For the purposes of CR Core, security conformance requirements are as follows:
-
+- Systems SHALL establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements.
+- Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection.
 - *Additional requirements TBA*
 
