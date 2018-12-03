@@ -6,7 +6,7 @@ FHIR servers must ensure that all vital sign measurements are associated with a 
 
 #### Example Usage Scenarios:
 
-The following are example usage scenarios for the CR Core-VitalSign profile:
+The following are example usage scenarios for the CR Core-VitalSigns profile:
 
 
 - Query for vital signs belonging to all Patients on a clinical trial

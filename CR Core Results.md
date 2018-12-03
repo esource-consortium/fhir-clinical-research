@@ -1,4 +1,4 @@
-## CR Core Observation
+## CR Core Results
 
 This FHIR profile sets minimum expectations for the [Observation](http://hl7.org/fhir/observation.html) resource resource to search / fetch laboratory test results associated with a patient on a clinical trial. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile.
 
@@ -6,7 +6,7 @@ FHIR servers must ensure that all lab results are associated with a protocol. No
 
 #### Example Usage Scenarios:
 
-The following are example usage scenarios for the CR Core-Observation profile:
+The following are example usage scenarios for the CR Core-Results profile:
 
 
 - Query for lab results belonging to all Patients on a clinical trial
