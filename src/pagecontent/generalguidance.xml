@@ -9,7 +9,8 @@
 
   <p>
   For the purposes of this implementation guide, the terms <strong>clinical trial</strong>, <strong>study</strong>, and <strong>protocol</strong> are considered equivalent. The FHIR representation of these terms <strong>SHALL</strong> be interpreted as <code>ResearchStudy</code> 
-  (<em>See: https://www.hl7.org/fhir/researchsubject.html</em>)
+  (<em>See: <a href="https://www.hl7.org/fhir/researchsubject.html">https://www.hl7.org/fhir/researchsubject.html</a></em>)
+
   </p>
 
 <a name="de-id"> </a>
@@ -19,7 +20,7 @@
  outline and provide guidance for is the de-identification of clinical trial participant data. Typically, "patient" data is captured in the <code>Patient</code> resource, which includes demographic and other types of information that determine who the individual is:</p>
 
 <ul>
-    <li>https://www.hl7.org/fhir/patient.html</li>
+    <li><a href="https://www.hl7.org/fhir/patient.html">https://www.hl7.org/fhir/patient.html</a></li>
 </ul>
 
 <p>
@@ -32,8 +33,8 @@ There are two FHIR resources dedicated to representing the concept of clinical r
 </p>
 
 <ul>
-    <li>https://www.hl7.org/fhir/researchsubject.html</li>
-    <li>https://www.hl7.org/fhir/researchstudy.html</li>
+    <li><a href="https://www.hl7.org/fhir/researchsubject.html">https://www.hl7.org/fhir/researchsubject.html</a></li>
+    <li><a href="https://www.hl7.org/fhir/researchstudy.html">https://www.hl7.org/fhir/researchstudy.html</a></li>
 </ul>
 
 

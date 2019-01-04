@@ -1,15 +1,15 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "sample-patient",
+    "id": "cr-core-patient",
     "meta": {
-      "versionId": "1",
+      "versionId": "7",
       "lastUpdated": "2018-07-17T18:42:47.28+00:00"
     },
-    "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/sample-patient",
-    "name": "Sample Patient Profile",
+    "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient",
+    "name": "CR Core Patient Profile",
     "status": "draft",
     "date": "2018-07-17T18:42:46.557Z",
-    "description": "Sample Patient Profile",
+    "description": "CR Core Patient Profile",
     "fhirVersion": "4.0.0",
     "kind": "resource",
     "abstract": false,
@@ -21,8 +21,8 @@
         {
           "id": "Patient",
           "path": "Patient",
-          "short": "Sample Patient Profile",
-          "definition": "A sample Patient Profile based on the HL7 FHIR Patient resource."
+          "short": "CR Core Patient Profile",
+          "definition": "The CR Core Patient Profile is based upon the core FHIR Patient Resource and designed to expose patient demographic data elements while de-identifying protected health information under the privacy rule."
         },
         {
           "id": "Patient.identifier",

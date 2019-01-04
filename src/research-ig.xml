@@ -33,10 +33,10 @@
     <!-- General -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/sample-patient"/>
+        <reference value="StructureDefinition/cr-core-patient"/>
       </reference>
-      <name value="Sample Patient"/>
-      <description value="Sample patient profile"/>
+      <name value="CR Core Patient"/>
+      <description value="CR Core patient profile"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
