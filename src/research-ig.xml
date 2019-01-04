@@ -67,6 +67,11 @@
         <title value="CR Core Profiles"/>
         <generation value="html"/>
       </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="html"/>
+      </page>
     </page>
   </definition>
 </ImplementationGuide>

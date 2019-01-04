@@ -1,0 +1,29 @@
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+
+  <p>
+   CR Core transactions often make use of clinical trial participant-specific information which could be exploited by malicious actors, resulting in exposure of protected health information (PHI). For this reason, transactions must be secured appropriately with access to limited authorized individuals, data protected in transit, and appropriate audit measures taken.
+
+  </p>
+
+  <p>Implementers should be aware of the security considerations associated with FHIR transactions, particularly those related to:</p>
+
+<ul>
+    <li><a href="http://hl7.org/fhir/security.html#http">Communication</a></li>
+    <li><a href="http://hl7.org/fhir/security.html#authentication">Authentication</a></li>
+    <li><a href="http://hl7.org/fhir/security.html#authorization/access%20control">Authorization/Access Control</a></li>
+    <li><a href="http://hl7.org/fhir/security.html#audit">Audit Logging</a></li>
+    <li><a href="http://hl7.org/fhir/security.html#digital%20signatures">Digital Signatures</a></li>
+    <li><a href="http://hl7.org/fhir/security-labels.html">Security Labels</a></li>
+    <li><a href="http://hl7.org/fhir/security.html#narrative">Narrative</a></li>
+</ul>
+
+<p>
+For the purposes of CR Core, security conformance requirements are as follows:
+</p>
+
+<ul>
+    <li>Systems SHALL establish a risk analysis and management regime that conforms with HIPAA security regulatory requirements.</li>
+    <li>Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection.</li>
+    <li><em>Additional requirements TBA</em></li>
+</ul>
