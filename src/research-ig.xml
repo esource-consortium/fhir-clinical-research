@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
+  <id value="research-ig"/>
+  <url value="http://hl7.org/fhir/:org:/research-ig/ImplementationGuide/research-ig"/>
+  <name value="Clinical Research Core Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Clinical Research Core Implementation Guide"/>
+  <description value="This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.cr-core.ig"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+
+    <grouping id="general">
+      <name value="General Profiles"/>
+      <description value="General constraints on FHIR resources to be adhered to as part of the CR Core implementation guide that apply regardless of what area(s) of clinical research data exchange are of interest."/>
+    </grouping>
+    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions defined as part of the CR Core implementation guide"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the CR Core profiles"/>
+    </grouping>
+
+    <!-- General -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/sample-patient"/>
+      </reference>
+      <name value="Sample Patient"/>
+      <description value="Sample patient profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <!-- /General -->
+
+    <!-- Extensions -->
+    <!-- /Extensions -->
+
+    <!-- Examples -->
+    <!-- /Examples -->
+
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="generalguidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="CR Core Profiles"/>
+        <generation value="html"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

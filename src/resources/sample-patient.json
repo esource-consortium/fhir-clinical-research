@@ -1,0 +1,78 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "sample-patient",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2018-07-17T18:42:47.28+00:00"
+    },
+    "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/sample-patient",
+    "name": "Sample Patient Profile",
+    "status": "draft",
+    "date": "2018-07-17T18:42:46.557Z",
+    "description": "Sample Patient Profile",
+    "fhirVersion": "4.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Patient",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Patient",
+          "path": "Patient",
+          "short": "Sample Patient Profile",
+          "definition": "A sample Patient Profile based on the HL7 FHIR Patient resource."
+        },
+        {
+          "id": "Patient.identifier",
+          "path": "Patient.identifier",
+          "min": 1,
+          "mustSupport": true
+        },
+        {
+          "id": "Patient.identifier.system",
+          "path": "Patient.identifier.system",
+          "mustSupport": true
+        },
+        {
+          "id": "Patient.identifier.value",
+          "path": "Patient.identifier.value",
+          "mustSupport": true
+        },
+        {
+          "id": "Patient.name",
+          "path": "Patient.name",
+          "max": "0",
+          "mustSupport": false
+        },
+        {
+          "id": "Patient.name.use",
+          "path": "Patient.name.use",
+          "short": "anonymous",
+          "max": "0",
+          "defaultValueCode": "anonymous"
+        },
+        {
+          "id": "Patient.telecom",
+          "path": "Patient.telecom",
+          "max": "0"
+        },
+        {
+          "id": "Patient.birthDate",
+          "path": "Patient.birthDate",
+          "max": "0"
+        },
+        {
+          "id": "Patient.address",
+          "path": "Patient.address",
+          "max": "0"
+        },
+        {
+          "id": "Patient.photo",
+          "path": "Patient.photo",
+          "max": "0"
+        }
+      ]
+    }
+  }

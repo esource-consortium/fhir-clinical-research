@@ -1,0 +1,35 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <blockquote class="stu-note">
+    <p>
+      This implementation guide is not fully complete. 
+    </p>
+  </blockquote>
+  <a name="overview"> </a>
+  <h2>Overview</h2>
+  <p>
+  This implementation guide is based on FHIR Version 4.0.0 and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.
+  </p>
+
+  <p>
+  The FHIR profiles referenced in this guide are closely aligned with the profiles as defined in <a href="http://www.hl7.org/fhir/us/core/" target="_blank">US Core</a>. 
+  </p>
+
+  <p>
+  The main distinguishing factor of the profiles contained in this guide is the emphasis on de-identification of patient data, and the usage/adoption of the "Research" FHIR Resources 
+<code>ResourceSubject</code> and <code>ResearchStudy</code>. 
+  </p>
+
+  <a name="Use Cases"></a>
+  <h3>Use Cases</h3>
+  <p>
+  This implementation guide describes several use cases and sets search expectations for each.
+ </p>
+
+<ol>
+  <li>A research study sponsor requests laboratory data for a research study</li>
+  <li>A research study sponsor request vital signs data for a research study</li>
+</ol>
+
+<p>Additional use cases TBA.</p>
+  
+</div>
