@@ -1,0 +1,56 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+
+  <p>
+   This section outlines important definitions and interpretations used in the CR Core IG.
+  </p>
+
+  <a name="clinical-trials-terminology"> </a>
+  <h3>Clinical Trial vs. Study vs. Protocol vs. ResearchStudy</h3>
+
+  <p>
+  For the purposes of this implementation guide, the terms <strong>clinical trial</strong>, <strong>study</strong>, and <strong>protocol</strong> are considered equivalent. The FHIR representation of these terms <strong>SHALL</strong> be interpreted as <code>ResearchStudy</code> 
+  (<em>See: https://www.hl7.org/fhir/researchsubject.html</em>)
+  </p>
+
+<a name="de-id"> </a>
+  <h3>De-identification of Patient data</h3>
+
+ <p>One of the primary requirements that this implementation guide seeks to 
+ outline and provide guidance for is the de-identification of clinical trial participant data. Typically, "patient" data is captured in the <code>Patient</code> resource, which includes demographic and other types of information that determine who the individual is:</p>
+
+<ul>
+    <li>https://www.hl7.org/fhir/patient.html</li>
+</ul>
+
+<p>
+Within the scope of clinical research data exchange, protecting patient privacy throughout the entire process is of paramount importance. Anonymization techniques are typically used to remove identifying information from datasets before any clinical trial data is shared between parties. 
+</p>
+
+
+<p>
+There are two FHIR resources dedicated to representing the concept of clinical research - <code>ResearchSubject</code> and <code>ResearchStudy</code>. 
+</p>
+
+<ul>
+    <li>https://www.hl7.org/fhir/researchsubject.html</li>
+    <li>https://www.hl7.org/fhir/researchstudy.html</li>
+</ul>
+
+
+<p>
+Utilizing <code>ResearchSubject</code> doesn't eliminate the need for <code>Patient</code>. Instead, <code>ResearchSubject</code> establishes a linkage between a <code>Patient</code> and a particular <code>ResearchStudy</code>, and captures the information specific to that join (e.g. subject status within the study, assigned arm, whether their consent is done, etc.)
+</p>
+
+<p>
+For the purposes of this implementation guide, when sharing patient information, you'd still have a <code>Patient</code> resource, it simply would not contain identifying attributes such as name, etc. See the <strong>CR Core Patient</strong> profile for more information.
+</p>
+
+</div>
+
+
+
+
+
+
+
+
