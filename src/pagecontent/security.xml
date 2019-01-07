@@ -27,3 +27,5 @@ For the purposes of CR Core, security conformance requirements are as follows:
     <li>Systems SHALL use TLS version 1.2 or higher for all transmissions not taking place over a secure network connection.</li>
     <li><em>Additional requirements TBA</em></li>
 </ul>
+
+</div>
