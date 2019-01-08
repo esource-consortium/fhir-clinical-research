@@ -1,0 +1,52 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "cr-core-researchsubject",
+    "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchsubject",
+    "name": "cr-core-researchsubject",
+    "status": "draft",
+    "fhirVersion": "4.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "ResearchSubject",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ResearchSubject",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "ResearchSubject.identifier",
+          "path": "ResearchSubject.identifier",
+          "alias": [
+            "study-id"
+          ],
+          "mustSupport": true
+        },
+        {
+          "id": "ResearchSubject.identifier.system",
+          "path": "ResearchSubject.identifier.system",
+          "mustSupport": true
+        },
+        {
+          "id": "ResearchSubject.study",
+          "path": "ResearchSubject.study",
+          "type": [
+            {
+              "code": "Reference",
+              "targetProfile": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy"
+            }
+          ],
+          "mustSupport": true
+        },
+        {
+          "id": "ResearchSubject.individual",
+          "path": "ResearchSubject.individual",
+          "type": [
+            {
+              "code": "Reference",
+              "targetProfile": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient"
+            }
+          ],
+          "mustSupport": true
+        }
+      ]
+    }
+  }

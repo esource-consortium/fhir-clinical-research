@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
-  <id value="research-ig"/>
-  <url value="http://hl7.org/fhir/:org:/research-ig/ImplementationGuide/research-ig"/>
+  <id value="cr-core-ig"/>
+  <url value="http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"/>
   <name value="Clinical Research Core Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -33,13 +33,35 @@
     <!-- General -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/sample-patient"/>
+        <reference value="StructureDefinition/cr-core-patient"/>
       </reference>
-      <name value="Sample Patient"/>
-      <description value="Sample patient profile"/>
+      <name value="CR Core Patient"/>
+      <description value="CR Core patient profile"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/cr-core-researchsubject"/>
+      </reference>
+      <name value="CR Core ResearchSubject"/>
+      <description value="CR Core ResearchSubject profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/cr-core-researchstudy"/>
+      </reference>
+      <name value="CR Core ResearchStudy"/>
+      <description value="CR Core ResearchStudy profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+
     <!-- /General -->
 
     <!-- Extensions -->
@@ -55,17 +77,22 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="generalguidance.html"/>
         <title value="General Guidance"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
         <title value="CR Core Profiles"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="General Security Considerations"/>
+        <generation value="markdown"/>
       </page>
     </page>
   </definition>

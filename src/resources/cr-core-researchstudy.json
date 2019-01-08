@@ -1,0 +1,32 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "cr-core-researchstudy",
+    "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy",
+    "name": "cr-core-researchstudy",
+    "status": "draft",
+    "fhirVersion": "4.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "ResearchStudy",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "ResearchStudy.identifier",
+          "path": "ResearchStudy.identifier",
+          "mustSupport": true
+        },
+        {
+          "id": "ResearchStudy.identifier.system",
+          "path": "ResearchStudy.identifier.system",
+          "mustSupport": true
+        },
+        {
+          "id": "ResearchStudy.identifier.value",
+          "path": "ResearchStudy.identifier.value",
+          "mustSupport": true
+        }
+      ]
+    }
+  }
