@@ -51,6 +51,17 @@
       <groupingId value="general"/>
     </resource>
 
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/cr-core-researchstudy"/>
+      </reference>
+      <name value="CR Core ResearchStudy"/>
+      <description value="CR Core ResearchStudy profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+
     <!-- /General -->
 
     <!-- Extensions -->
@@ -66,22 +77,22 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="generalguidance.html"/>
         <title value="General Guidance"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
         <title value="CR Core Profiles"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="security.html"/>
-        <title value="Security"/>
-        <generation value="html"/>
+        <title value="General Security Considerations"/>
+        <generation value="markdown"/>
       </page>
     </page>
   </definition>
