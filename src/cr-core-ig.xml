@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
-  <id value="research-ig"/>
-  <url value="http://hl7.org/fhir/:org:/research-ig/ImplementationGuide/research-ig"/>
+  <id value="cr-core-ig"/>
+  <url value="http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"/>
   <name value="Clinical Research Core Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -14,7 +14,7 @@
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.cr-core.ig"/>
-  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="4.0.0"/>
   <definition>
 
     <grouping id="general">

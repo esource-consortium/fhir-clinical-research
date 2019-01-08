@@ -5,7 +5,7 @@
   "name": "cr-core-patient",
   "status": "draft",
   "description": "The CR Core Patient Profile is based upon the core FHIR Patient Resource and designed to expose patient demographic data elements while de-identifying protected health information under the privacy rule.",
-  "fhirVersion": "3.0.1",
+  "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
   "type": "Patient",

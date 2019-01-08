@@ -1,9 +1,10 @@
 {
     "resourceType": "StructureDefinition",
+    "id": "cr-core-researchsubject",
     "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchsubject",
     "name": "cr-core-researchsubject",
     "status": "draft",
-    "fhirVersion": "3.0.1",
+    "fhirVersion": "4.0.0",
     "kind": "resource",
     "abstract": false,
     "type": "ResearchSubject",
@@ -30,7 +31,7 @@
           "type": [
             {
               "code": "Reference",
-              "targetProfile": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchsubject"
+              "targetProfile": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy"
             }
           ],
           "mustSupport": true

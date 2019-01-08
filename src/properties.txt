@@ -1,5 +1,5 @@
 #guidename must match the id of the implementation guide
-guidename=research-ig
+guidename=cr-core-ig
 copyrightyear=2018+
 license=CC0-1.0
 version=0.1

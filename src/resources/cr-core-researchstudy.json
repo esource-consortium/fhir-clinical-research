@@ -4,7 +4,7 @@
     "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy",
     "name": "cr-core-researchstudy",
     "status": "draft",
-    "fhirVersion": "3.0.1",
+    "fhirVersion": "4.0.0",
     "kind": "resource",
     "abstract": false,
     "type": "ResearchStudy",
