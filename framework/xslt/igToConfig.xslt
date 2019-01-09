@@ -104,7 +104,7 @@
       <xsl:when test="$additional">
         <xsl:value-of select="concat('temp/pages/', $additional)"/>
       </xsl:when>
-      <xsl:otherwise>output</xsl:otherwise>
+      <xsl:otherwise>docs</xsl:otherwise>
     </xsl:choose>
     <text>",
     "txCache": "txcache",
