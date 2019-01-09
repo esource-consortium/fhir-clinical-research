@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cr-core-ig"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1"];
+  fhir:ImplementationGuide.name [ fhir:value "Clinical Research Core Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ImplementationGuide.publisher [ fhir:value "Clinical Research Core Implementation Guide"];
+  fhir:ImplementationGuide.description [ fhir:value "This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor."];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.cr-core.ig"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.0";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.grouping [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "general" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "General Profiles" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "General constraints on FHIR resources to be adhered to as part of the CR Core implementation guide that apply regardless of what area(s) of clinical research data exchange are of interest." ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "extensions" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Extensions" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Extensions defined as part of the CR Core implementation guide" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "examples" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Example(s)" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Example(s) showing the use of the CR Core profiles" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "cr-core-patient.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cr-core-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CR Core Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CR Core patient profile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "general" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "cr-core-researchsubject.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchsubject>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cr-core-researchsubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CR Core ResearchSubject" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CR Core ResearchSubject profile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "general" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "cr-core-researchstudy.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchstudy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/cr-core-researchstudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CR Core ResearchStudy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CR Core ResearchStudy profile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "general" ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "generalguidance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "General Guidance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "CR Core Profiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "General Security Considerations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-patient> a fhir::org: .
+
+<http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchsubject> a fhir::org: .
+
+<http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchstudy> a fhir::org: .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/:org:/cr-core-ig/ImplementationGuide/cr-core-ig.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,123 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "cr-core-ig",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>\n</div></div>"
+  },
+  "url": "http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig",
+  "version": "0.1",
+  "name": "Clinical Research Core Implementation Guide",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "Clinical Research Core Implementation Guide",
+  "description": "This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.cr-core.ig",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.0"
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "general",
+        "name": "General Profiles",
+        "description": "General constraints on FHIR resources to be adhered to as part of the CR Core implementation guide that apply regardless of what area(s) of clinical research data exchange are of interest."
+      },
+      {
+        "id": "extensions",
+        "name": "Extensions",
+        "description": "Extensions defined as part of the CR Core implementation guide"
+      },
+      {
+        "id": "examples",
+        "name": "Example(s)",
+        "description": "Example(s) showing the use of the CR Core profiles"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "cr-core-patient.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cr-core-patient"
+        },
+        "name": "CR Core Patient",
+        "description": "CR Core patient profile",
+        "exampleBoolean": false,
+        "groupingId": "general"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "cr-core-researchsubject.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cr-core-researchsubject"
+        },
+        "name": "CR Core ResearchSubject",
+        "description": "CR Core ResearchSubject profile",
+        "exampleBoolean": false,
+        "groupingId": "general"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "cr-core-researchstudy.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cr-core-researchstudy"
+        },
+        "name": "CR Core ResearchStudy",
+        "description": "CR Core ResearchStudy profile",
+        "exampleBoolean": false,
+        "groupingId": "general"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "generalguidance.html",
+          "title": "General Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "CR Core Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "security.html",
+          "title": "General Security Considerations",
+          "generation": "markdown"
+        }
+      ]
+    }
+  }
+}

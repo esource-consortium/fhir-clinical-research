@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="cr-core-ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"/>
+  <version value="0.1"/>
+  <name value="Clinical Research Core Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="Clinical Research Core Implementation Guide"/>
+  <description value="This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.cr-core.ig"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="general">
+      <name value="General Profiles"/>
+      <description value="General constraints on FHIR resources to be adhered to as part of the CR Core implementation guide that apply regardless of what area(s) of clinical research data exchange are of interest."/>
+    </grouping>
+    <grouping id="extensions">
+      <name value="Extensions"/>
+      <description value="Extensions defined as part of the CR Core implementation guide"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Example(s)"/>
+      <description value="Example(s) showing the use of the CR Core profiles"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cr-core-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cr-core-patient"/>
+      </reference>
+      <name value="CR Core Patient"/>
+      <description value="CR Core patient profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cr-core-researchsubject.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cr-core-researchsubject"/>
+      </reference>
+      <name value="CR Core ResearchSubject"/>
+      <description value="CR Core ResearchSubject profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cr-core-researchstudy.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cr-core-researchstudy"/>
+      </reference>
+      <name value="CR Core ResearchStudy"/>
+      <description value="CR Core ResearchStudy profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="generalguidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="CR Core Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="General Security Considerations"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
