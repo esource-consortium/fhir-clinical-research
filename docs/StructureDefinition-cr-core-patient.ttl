@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1"];
   fhir:StructureDefinition.name [ fhir:value "cr-core-patient"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-01-09T09:50:54-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-01-10T14:55:08-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "The CR Core Patient Profile is based upon the core FHIR Patient Resource and designed to expose patient demographic data elements while de-identifying protected health information under the privacy rule."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [

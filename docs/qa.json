@@ -3,7 +3,7 @@
   "name": "Clinical Research Core Implementation Guide",
   "package-id": "hl7.fhir.cr-core.ig",
   "ig-ver": "0.1",
-  "date": "Wed, 09 Jan, 2019 09:50:54 -0500",
+  "date": "Thu, 10 Jan, 2019 14:55:08 -0500",
   "errs": 12,
   "warnings": 14,
   "hints": 0,
