@@ -14,8 +14,8 @@ The main distinguishing factor of the profiles contained in this guide is the em
 ## Use Cases
 This implementation guide describes several use cases and sets search expectations for each.
 
-- A research study sponsor requests laboratory data for a research study
-- A research study sponsor request vital signs data for a research study
+- A research study sponsor requests deidentified laboratory data for a patient on a research study
+- A research study sponsor requests deidentified vital signs data for a patient on a research study
 
 Additional use cases TBA.
 
