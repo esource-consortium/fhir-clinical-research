@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>\n</div></div>"
   },
   "url": "http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig",
-  "version": "0.1",
+  "version": "0.2",
   "name": "Clinical Research Core Implementation Guide",
   "status": "draft",
   "experimental": false,
@@ -90,6 +90,21 @@
         "description": "CR Core ResearchStudy profile",
         "exampleBoolean": false,
         "groupingId": "general"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "cr-core-results.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cr-core-results"
+        },
+        "name": "CR Core Results",
+        "description": "CR Core Results profile",
+        "exampleBoolean": false,
+        "groupingId": "general"
       }
     ],
     "page": {
@@ -116,6 +131,33 @@
           "nameUrl": "security.html",
           "title": "General Security Considerations",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "artifacts.html",
+          "title": "Artifacts",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "cr-core-patient.html",
+              "title": "CR Core Patient",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "cr-core-researchsubject.html",
+              "title": "CR Core ResearchSubject",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "cr-core-researchstudy.html",
+              "title": "CR Core ResearchStudy",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "cr-core-results.html",
+              "title": "CR Core Results",
+              "generation": "generated"
+            }
+          ]
         }
       ]
     }

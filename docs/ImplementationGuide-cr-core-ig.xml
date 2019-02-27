@@ -7,7 +7,7 @@
 </div></div>
   </text>
   <url value="http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"/>
-  <version value="0.1"/>
+  <version value="0.2"/>
   <name value="Clinical Research Core Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -71,6 +71,18 @@
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cr-core-results.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cr-core-results"/>
+      </reference>
+      <name value="CR Core Results"/>
+      <description value="CR Core Results profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -94,6 +106,31 @@
         <nameUrl value="security.html"/>
         <title value="General Security Considerations"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="cr-core-patient.html"/>
+          <title value="CR Core Patient"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="cr-core-researchsubject.html"/>
+          <title value="CR Core ResearchSubject"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="cr-core-researchstudy.html"/>
+          <title value="CR Core ResearchStudy"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="cr-core-results.html"/>
+          <title value="CR Core Results"/>
+          <generation value="generated"/>
+        </page>
       </page>
     </page>
   </definition>

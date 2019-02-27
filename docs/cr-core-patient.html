@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CR-CORE-IG\ - FHIR v4.0.0</title>
+    <title>CR-CORE-IG\CR Core Patient - FHIR v4.0.0</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -35,13 +35,13 @@
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
         <div id="hl7-status">
-          <b>Clinical Research Core Implementation Guide</b> 0.1 - Continuous Build 
+          <b>Clinical Research Core Implementation Guide</b> 0.2 - Continuous Build 
         </div>
     
         <div id="hl7-nav">
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>CR Core Patient</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -147,6 +147,42 @@
   </p>
   <pre>https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient</pre>
 
+  
+  
+  
+  
+  <div style="display:inline-block">
+  
+<h3 id="overview">Overview</h3>
+
+<p>This FHIR profile sets minimum expectations for the <a href="http://hl7.org/fhir/patient.html">Patient</a> resource to search / fetch basic demographic and administrative information associated with a patient on a clinical trial. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile.</p>
+
+<p>FHIR servers must ensure that all patient records are associated with a protocol, represented by the linkage of a <code class="highlighter-rouge">Patient</code> and a particular <code class="highlighter-rouge">ResearchStudy</code> through the <code class="highlighter-rouge">ResearchSubject</code> resource.</p>
+
+<h4 id="mandatory-data-elements-and-terminology">Mandatory Data Elements and Terminology</h4>
+<p>The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <strong>Formal Profile Definition</strong> below provides the formal summary, definitions, and terminology requirements.</p>
+
+<h4 id="each-patient-must-have">Each Patient must have:</h4>
+
+<ol>
+  <li>A patient identifier (<em>See Profile specific implementation guidance below</em>)</li>
+  <li>A gender</li>
+</ol>
+
+<h4 id="if-data-is-available-each-patient-shall-include">If data is available, each Patient shall include:</h4>
+<ol>
+  <li>A non-identifying date of birth (year only)</li>
+  <li>A race</li>
+  <li>An ethnicity</li>
+</ol>
+
+<h4 id="profile-specific-implementation-guidance">Profile specific implementation guidance</h4>
+<ul>
+  <li><strong>MRN</strong>s (medical record numbers) SHALL NOT be used as resource identifiers for Patients. The FHIR specification discusses this briefly. https://www.hl7.org/fhir/patient.html#ids</li>
+</ul>
+
+
+  </div>
   
   
   <!-- no uri -->
@@ -642,7 +678,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Thu, Jan 10, 2019 14:55-0500.
+          Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Wed, Feb 27, 2019 11:48-0500.
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
