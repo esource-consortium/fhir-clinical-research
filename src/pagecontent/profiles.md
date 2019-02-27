@@ -3,3 +3,4 @@ The following profiles set the minimum expectations to search and fetch clinical
 - [CR Core Patient](cr-core-patient.html)
 - [CR Core ResearchSubject](cr-core-researchsubject.html)
 - [CR Core ResearchStudy](cr-core-researchstudy.html)
+- [CR Core Results](cr-core-results.html)

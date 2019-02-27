@@ -62,6 +62,16 @@
       <groupingId value="general"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/cr-core-results"/>
+      </reference>
+      <name value="CR Core Results"/>
+      <description value="CR Core Results profile"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+
     <!-- /General -->
 
     <!-- Extensions -->
@@ -93,6 +103,11 @@
         <nameUrl value="security.html"/>
         <title value="General Security Considerations"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
       </page>
     </page>
   </definition>

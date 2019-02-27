@@ -9,10 +9,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://build.fhir.org/formats.html#table" title="Legend for this format"><img src="http://build.fhir.org/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy"/>
-  <version value="0.1"/>
+  <version value="0.2"/>
   <name value="cr-core-researchstudy"/>
   <status value="draft"/>
-  <date value="2019-01-10T14:55:08-05:00"/>
+  <date value="2019-02-27T11:48:50-05:00"/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="BRIDG5.1"/>

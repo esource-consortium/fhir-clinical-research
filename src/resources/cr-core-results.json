@@ -1,0 +1,104 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "cr-core-results",
+    "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-results",
+    "name": "cr-core-results",
+    "status": "draft",
+    "fhirVersion": "4.0.0",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Observation",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Observation.identifier",
+          "path": "Observation.identifier",
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.identifier.system",
+          "path": "Observation.identifier.system",
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.identifier.value",
+          "path": "Observation.identifier.value",
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.status",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
+              "valueString": "default: final"
+            }
+          ],
+          "path": "Observation.status",
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.category",
+          "path": "Observation.category",
+          "min": 1,
+          "constraint": [
+            {
+              "key": "cr-core-1",
+              "severity": "error",
+              "human": "Must have a category of 'laboratory' and a code system 'http://hl7.org/fhir/observation-category'",
+              "expression": "where(coding.system='http://hl7.org/fhir/observation-category' and coding.code='laboratory').exists()"
+            }
+          ],
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.code",
+          "path": "Observation.code",
+          "short": "Laboratory Test Name",
+          "definition": "The test that was performed.  A LOINC **SHALL** be used if the concept is present in LOINC.",
+          "comment": "The typical patterns for codes are:  1)  a LOINC code either as a  translation from a \\\"local\\\" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.  When using LOINC , Use either the SHORTNAME or LONG_COMMON_NAME field for the display.",
+          "mustSupport": true,
+          "binding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+                "valueString": "ObservationCode"
+              }
+            ],
+            "strength": "extensible",
+            "description": "LOINC codes",
+            "valueSetUri": "http://hl7.org/fhir/ValueSet/observation-codes"
+          }
+        },
+        {
+          "id": "Observation.subject",
+          "path": "Observation.subject",
+          "min": 1,
+          "type": [
+            {
+              "code": "Reference",
+              "targetProfile": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient"
+            }
+          ],
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.effective[x]",
+          "path": "Observation.effective[x]",
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.value[x]",
+          "path": "Observation.value[x]",
+          "definition": "The Laboratory result value.",
+          "mustSupport": true
+        },
+        {
+          "id": "Observation.dataAbsentReason",
+          "path": "Observation.dataAbsentReason",
+          "mustSupport": true
+        }
+      ]
+    }
+  }

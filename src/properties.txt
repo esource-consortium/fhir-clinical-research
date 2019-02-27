@@ -2,7 +2,7 @@
 guidename=cr-core-ig
 copyrightyear=2018+
 license=CC0-1.0
-version=0.1
+version=0.2
 ballotstatus=Continuous Build
 fhirspec=http://build.fhir.org/
 #excludexml=Yes
