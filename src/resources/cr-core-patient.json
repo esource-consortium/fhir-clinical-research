@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "cr-core-patient",
   "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient",
-  "name": "cr-core-patient",
+  "name": "CRCorePatient",
   "status": "draft",
   "description": "The CR Core Patient Profile is based upon the core FHIR Patient Resource and designed to expose patient demographic data elements while de-identifying protected health information under the privacy rule.",
   "fhirVersion": "4.0.0",
