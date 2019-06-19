@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cr-core-researchstudy",
-  "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy",
+  "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchstudy",
   "name": "CRCoreResearchStudy",
   "status": "draft",
   "fhirVersion": "4.0.0",

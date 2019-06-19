@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="cr-core-ig"/>
+  <id value="hl7.fhir.cr-core.ig-0.2"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>
 </div></div>
   </text>
-  <url value="http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"/>
+  <url value="https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig"/>
   <version value="0.2"/>
   <name value="Clinical Research Core Implementation Guide"/>
   <status value="draft"/>
@@ -83,6 +83,18 @@
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cr-core-searchparam-researchstudy.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cr-core-searchparam-researchstudy"/>
+      </reference>
+      <name value="ResearchStudy SearchParam"/>
+      <description value="CR Core ResearchStudy Search Parameter"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -129,6 +141,11 @@
         <page>
           <nameUrl value="cr-core-results.html"/>
           <title value="CR Core Results"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="cr-core-searchparam-researchstudy.html"/>
+          <title value="ResearchStudy SearchParam"/>
           <generation value="generated"/>
         </page>
       </page>

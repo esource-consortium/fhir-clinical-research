@@ -1,37 +1,36 @@
 ﻿Clinical Research Core Implementation Guide : Validation Results
 =========================================
 
-err = 18, warn = 18, info = 0
-Generated Wed Feb 27 11:49:17 EST 2019. FHIR version 4.0.0 for 4.0.0
+err = 26, warn = 2, info = 0
+Generated Wed Jun 19 16:18:17 EDT 2019. FHIR version 4.0.0 for hl7.fhir.cr-core.ig#0.2 (canonical = )
 
- Build Errors : 0 / 0
- /Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig : 0 / 1
- /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient : 2 / 2
- /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy : 2 / 2
- /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject : 2 / 2
- /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results : 3 / 2
+ Build Errors : 1 / 0
+ /Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig : 1 / 1
+ /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient : 2 / 0
+ /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy : 2 / 0
+ /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject : 2 / 0
+ /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results : 4 / 0
+ /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy : 2 / 0
 </table>
 == n/a ==
+ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy.json: Resource id/url mismatch: cr-core-searchparam-researchstudy/http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy
 == /Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig.xml ==
 WARNING: ImplementationGuide/cr-core-ig: ImplementationGuide: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: /Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig: URL Mismatch /ImplementationGuide/cr-core-ig vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig
 == /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient.json ==
-WARNING: StructureDefinition/cr-core-patient: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
-WARNING: StructureDefinition/cr-core-patient: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient.json canonical URL (http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-patient) does not match the URL (https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient)
-ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient: URL Mismatch http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-patient vs https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient
+ERROR: https://esource-consortium.github.io/fhir-clinical-research/cr-core-patient: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient.json canonical URL (StructureDefinition/cr-core-patient) does not match the URL (https://esource-consortium.github.io/fhir-clinical-research/cr-core-patient)
+ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient: URL Mismatch /StructureDefinition/cr-core-patient vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-patient
 == /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy.json ==
-WARNING: StructureDefinition/cr-core-researchstudy: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
-WARNING: StructureDefinition/cr-core-researchstudy: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy.json canonical URL (http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchstudy) does not match the URL (https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy)
-ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy: URL Mismatch http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchstudy vs https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchstudy
+ERROR: https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchstudy: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy.json canonical URL (StructureDefinition/cr-core-researchstudy) does not match the URL (https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchstudy)
+ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchstudy: URL Mismatch /StructureDefinition/cr-core-researchstudy vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchstudy
 == /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject.json ==
-WARNING: StructureDefinition/cr-core-researchsubject: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
-WARNING: StructureDefinition/cr-core-researchsubject: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchsubject: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject.json canonical URL (http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchsubject) does not match the URL (https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchsubject)
-ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject: URL Mismatch http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-researchsubject vs https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-researchsubject
+ERROR: https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchsubject: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject.json canonical URL (StructureDefinition/cr-core-researchsubject) does not match the URL (https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchsubject)
+ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-researchsubject: URL Mismatch /StructureDefinition/cr-core-researchsubject vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-researchsubject
 == /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results.json ==
-ERROR: /StructureDefinition/differential/element/binding: Unrecognised property '@valueSetUri'
-WARNING: StructureDefinition/cr-core-results: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
-WARNING: StructureDefinition/cr-core-results: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-results: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results.json canonical URL (http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-results) does not match the URL (https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-results)
-ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results: URL Mismatch http://hl7.org/fhir/:org:/cr-core-ig/StructureDefinition/cr-core-results vs https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-results
+ERROR: StructureDefinition/cr-core-results: StructureDefinition.extension[url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy']: The Extension 'http://hl7.org/fhir/StructureDefinition/workflow-researchStudy' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: StructureDefinition/cr-core-results: StructureDefinition.extension: Must have either extensions or value[x], not both [extension.exists() != value.exists()]
+ERROR: https://esource-consortium.github.io/fhir-clinical-research/cr-core-results: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results.json canonical URL (StructureDefinition/cr-core-results) does not match the URL (https://esource-consortium.github.io/fhir-clinical-research/cr-core-results)
+ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results: URL Mismatch /StructureDefinition/cr-core-results vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-results
+== /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy.json ==
+ERROR: http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy: conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy.json canonical URL (StructureDefinition/cr-core-searchparam-researchstudy) does not match the URL (http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy)
+ERROR: /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy: URL Mismatch /StructureDefinition/cr-core-searchparam-researchstudy vs http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy

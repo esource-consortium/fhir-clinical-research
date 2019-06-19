@@ -1,11 +1,11 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "cr-core-ig",
+  "id": "hl7.fhir.cr-core.ig-0.2",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>\n</div></div>"
   },
-  "url": "http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig",
+  "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig",
   "version": "0.2",
   "name": "Clinical Research Core Implementation Guide",
   "status": "draft",
@@ -105,6 +105,21 @@
         "description": "CR Core Results profile",
         "exampleBoolean": false,
         "groupingId": "general"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "cr-core-searchparam-researchstudy.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cr-core-searchparam-researchstudy"
+        },
+        "name": "ResearchStudy SearchParam",
+        "description": "CR Core ResearchStudy Search Parameter",
+        "exampleBoolean": false,
+        "groupingId": "general"
       }
     ],
     "page": {
@@ -155,6 +170,11 @@
             {
               "nameUrl": "cr-core-results.html",
               "title": "CR Core Results",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "cr-core-searchparam-researchstudy.html",
+              "title": "ResearchStudy SearchParam",
               "generation": "generated"
             }
           ]

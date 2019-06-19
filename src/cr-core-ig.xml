@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../src-generated/schemas/fhir-single.xsd">
   <id value="cr-core-ig"/>
-  <url value="http://hl7.org/fhir/:org:/cr-core-ig/ImplementationGuide/cr-core-ig"/>
+  <url value="https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig"/>
   <name value="Clinical Research Core Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -76,6 +76,22 @@
 
     <!-- Extensions -->
     <!-- /Extensions -->
+
+    <!-- SearchParams -->
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/cr-core-searchparam-researchstudy"/>
+      </reference>
+      <name value="ResearchStudy SearchParam"/>
+      <description value="CR Core ResearchStudy Search Parameter"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="general"/>
+    </resource>
+
+    <!-- /SearchParams -->
+
+
 
     <!-- Examples -->
     <!-- /Examples -->

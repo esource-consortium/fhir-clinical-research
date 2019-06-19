@@ -1,7 +1,10 @@
 {
   "resourceType": "StructureDefinition",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-researchStudy"
+  }],
   "id": "cr-core-results",
-  "url": "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-results",
+  "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-results",
   "name": "CRCoreResults",
   "status": "draft",
   "fhirVersion": "4.0.0",
@@ -66,7 +69,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://build.fhir.org/ig/:org:/:repo:/StructureDefinition/cr-core-patient"
+              "https://esource-consortium.github.io/fhir-clinical-research/cr-core-patient"
             ]
           }
         ],

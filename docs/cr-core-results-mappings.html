@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CR-CORE-IG\CR Core Results - Mappings - FHIR v4.0.0</title>
+    <title>HL7.FHIR.CR-CORE.IG-0.2\CR Core Results - Mappings - FHIR v4.0.0</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,13 +141,13 @@
 
   </ul>
   <a name="root"> </a>
-  <h2 id="root">StructureDefinition: cr-core-results - Mappings</h2>
+  <h2 id="root">StructureDefinition: CRCoreResults - Mappings</h2>
   <p>Mappings for the  Profile.</p>
   
   
 
   <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>cr-core-results</b></td></tr>
+ <tr><td colspan="3"><b>CRCoreResults</b></td></tr>
  <tr><td>Observation</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Event.basedOn</td> </tr>
@@ -160,7 +160,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer.actor</td> </tr>
 </table>
 <a name="sct-concept"> </a><h3>Mappings for SNOMED CT Concept Domain Binding (http://snomed.info/conceptdomain)</h3><table class="grid">
- <tr><td colspan="3"><b>cr-core-results</b></td></tr>
+ <tr><td colspan="3"><b>CRCoreResults</b></td></tr>
  <tr><td>Observation</td><td>&lt; 363787002 |Observable entity|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>&lt; 445584004 |Report by finality status|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</td> </tr>
@@ -178,7 +178,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interpretation</td><td>&lt; 260245000 |Findings values|</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>cr-core-results</b></td></tr>
+ <tr><td colspan="3"><b>CRCoreResults</b></td></tr>
  <tr><td>Observation</td><td>OBX</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>OBX.21  For OBX segments from systems without OBX-21 support a combination of ORC/OBR and OBX must be negotiated between trading partners to uniquely identify the OBX segment. Depending on how V2 has been implemented each of these may be an option: 1) OBR-3 + OBX-3 + OBX-4 or 2) OBR-3 + OBR-4 + OBX-3 + OBX-4 or 2) some other way to uniquely ID the OBR/ORC + OBX-3 + OBX-4.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
@@ -221,7 +221,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceRange</td><td>OBX.7</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>cr-core-results</b></td></tr>
+ <tr><td colspan="3"><b>CRCoreResults</b></td></tr>
  <tr><td>Observation</td><td>Entity. Role, or Act</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
@@ -278,7 +278,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referenceRange</td><td>outboundRelationship[typeCode=REFV]/target[classCode=OBS, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>cr-core-results</b></td></tr>
+ <tr><td colspan="3"><b>CRCoreResults</b></td></tr>
  <tr><td>Observation</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
@@ -294,7 +294,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.what[x]</td> </tr>
 </table>
 <a name="sct-attr"> </a><h3>Mappings for SNOMED CT Attribute Binding (http://snomed.org/attributebinding)</h3><table class="grid">
- <tr><td colspan="3"><b>cr-core-results</b></td></tr>
+ <tr><td colspan="3"><b>CRCoreResults</b></td></tr>
  <tr><td>Observation</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>116680003 |Is a|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>363714003 |Interprets|</td> </tr>
@@ -347,15 +347,11 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Wed, Feb 27, 2019 11:48-0500.
+          CR Core Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Wed, Jun 19, 2019 16:17-0400.
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir/:org:/cr-core-ig/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img alt="external" style="text-align: baseline" src="external.png"/></a>
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
