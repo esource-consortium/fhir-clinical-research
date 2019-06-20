@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.CR-CORE.IG-0.3\Home - FHIR v4.0.0</title>
+    <title>HL7.FHIR.CR-CORE.IG-0.3\Observation ResearchStudy SearchParam - FHIR v4.0.0</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -35,8 +35,8 @@
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:"1"}
-    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.5"}
+    h3,h4,h5,h6{--heading-prefix:"6.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
@@ -101,7 +101,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Observation ResearchStudy SearchParam</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -110,48 +110,43 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
+
+
+
 <div class="col-12">
-  <h2>Home</h2>
+  <a name="root"> </a>
+  <h2 id="root">Observation ResearchStudy SearchParam</h2>
+  <p>
+    Format(s):
+  </p>
+  <ul>
+
+    <li>
+      <a href="cr-core-searchparam-observation-researchstudy.xml.html">XML</a>
+    </li>
+
+
+    <li>
+      <a href="cr-core-searchparam-observation-researchstudy.json.html">JSON</a> 
+    </li>
+
+
+    <li>
+      <a href="cr-core-searchparam-observation-researchstudy.ttl.html">Turtle</a>
+    </li>
+
+  </ul>
+
   
   
+
+  <p>
+    <b>Narrative view</b>
+  </p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy</b></p><p><b>name</b>: CRCoreSearchParamObservationResearchStudy</p><p><b>status</b>: DRAFT</p><p><b>description</b>: Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy</p><p><b>purpose</b>: Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.</p><p><b>code</b>: researchstudy</p><p><b>base</b>: Observation</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value</p><p><b>xpathUsage</b>: NORMAL</p><p><b>multipleOr</b>: false</p><p><b>multipleAnd</b>: false</p></div>
+
   
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
-</ul>
-
-</div>
-<blockquote class="stu-note">
-  <p>This implementation guide is not fully complete.</p>
-</blockquote>
-
-<h2 id="overview">Overview</h2>
-<p>This implementation guide is based on FHIR Version 4.0.0 and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>
-
-<p>The FHIR profiles referenced in this guide are closely aligned with the profiles as defined in <a href="http://www.hl7.org/fhir/us/core/">US Core</a>.</p>
-
-<p>The main distinguishing factor of the profiles contained in this guide is the emphasis on de-identification of patient data, and the usage/adoption of the “Research” FHIR Resources 
-<code class="highlighter-rouge">ResourceSubject</code> and <code class="highlighter-rouge">ResearchStudy</code>.</p>
-
-<h2 id="use-cases">Use Cases</h2>
-<p>This implementation guide describes several use cases and sets search expectations for each.</p>
-
-<ul>
-  <li>A research study sponsor requests deidentified laboratory data for a patient on a research study</li>
-  <li>A research study sponsor requests deidentified vital signs data for a patient on a research study</li>
-</ul>
-
-<p>Additional use cases TBA.</p>
-
-
+  
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->

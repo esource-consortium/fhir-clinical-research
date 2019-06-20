@@ -1,16 +1,10 @@
 {
   "package": "hl7.fhir.cr-core.ig",
-  "version": "0.2",
+  "version": "0.3",
   "fhirVersion": "4.0.0",
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
-    "SearchParameter": [
-      {
-        "url": "http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy",
-        "title": "CRCoreSearchParamResearchStudy"
-      }
-    ],
     "Patient": [
       {
         "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-patient",

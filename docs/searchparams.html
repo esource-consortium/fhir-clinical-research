@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.CR-CORE.IG-0.2\ResearchStudy SearchParam - Mappings - FHIR v4.0.0</title>
+    <title>HL7.FHIR.CR-CORE.IG-0.3\CR Core Search Parameters - FHIR v4.0.0</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -35,13 +35,13 @@
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:"5.5"}
-    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
         <div id="hl7-status">
-          <b>Clinical Research Core Implementation Guide</b> 0.2 - Continuous Build 
+          <b>Clinical Research Core Implementation Guide</b> 0.3 - Continuous Build 
         </div>
     
         <div id="hl7-nav">
@@ -81,6 +81,9 @@
       <a href="profiles.html">CR Core Profiles</a>
    </li>
   <li>
+      <a href="searchparams.html">CR Core Search Parameters</a>
+   </li>
+  <li>
       <a href="security.html">Security</a>
    </li>
   <li>
@@ -98,7 +101,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>ResearchStudy SearchParam</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>CR Core Search Parameters</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -107,134 +110,42 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-<div style="counter-reset: section 5" class="col-12">
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="cr-core-searchparam-researchstudy.html">Content</a>
-    </li>
-    <li>
-      <a href="cr-core-searchparam-researchstudy-definitions.html">Detailed Descriptions</a>
-    </li>
-    <li class="active">
-      <a href="#">Mappings</a>
-    </li>
-    <li>
-      <a href="cr-core-searchparam-researchstudy-examples.html">Examples</a>
-    </li>
-
-    <li>
-      <a href="cr-core-searchparam-researchstudy.profile.xml.html">XML</a>
-    </li>
-
-
-    <li>
-      <a href="cr-core-searchparam-researchstudy.profile.json.html">JSON</a>
-    </li>
-
-
-    <li>
-      <a href="cr-core-searchparam-researchstudy.profile.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
-  <a name="root"> </a>
-  <h2 id="root">StructureDefinition: CRCoreSearchParamResearchStudy - Mappings</h2>
-  <p>Mappings for the  Profile.</p>
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <h2>CR Core Search Parameters</h2>
   
   
-
-  <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CRCoreSearchParamResearchStudy</b></td></tr>
- <tr><td>SearchParameter</td><td>n/a</td> </tr>
-</table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CRCoreSearchParamResearchStudy</b></td></tr>
- <tr><td>SearchParameter</td><td>Entity. Role, or Act</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;component</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
-</table>
-<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>CRCoreSearchParamResearchStudy</b></td></tr>
- <tr><td>SearchParameter</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>Definition.url</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;version</td><td>Definition.version</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Definition.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;experimental</td><td>Definition.experimental</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>Definition.date</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;publisher</td><td>Definition.publisher</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contact</td><td>Definition.contact</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;description</td><td>Definition.description</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;useContext</td><td>Definition.useContext</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;jurisdiction</td><td>Definition.jurisdiction</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;purpose</td><td>Definition.purpose</td> </tr>
-</table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>CRCoreSearchParamResearchStudy</b></td></tr>
- <tr><td>SearchParameter</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;version</td><td>FiveWs.version</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;experimental</td><td>FiveWs.class</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>FiveWs.recorded</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;publisher</td><td>FiveWs.witness</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;purpose</td><td>FiveWs.why[x]</td> </tr>
-</table>
-<a name="objimpl"> </a><h3>Mappings for Object Implementation Information (http://hl7.org/fhir/object-implementation)</h3><table class="grid">
- <tr><td colspan="3"><b>CRCoreSearchParamResearchStudy</b></td></tr>
- <tr><td>SearchParameter</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;purpose</td><td>no-gen-base</td> </tr>
-</table>
-
-
   
-  
+<div class="markdown-toc">
+
 </div>
+<p>The following search parameters have been defined for the CR Core Implementation guide. For more information on the <a href="http://hl7.org/fhir/R4/operations.html">FHIR RESTful operations</a>, <a href="http://hl7.org/fhir/R4/search.html">FHIR RESTful Search API</a> and the standard <a href="http://hl7.org/fhir/R4/searchparameter-registry.html">Search Parameter Registry</a> see the FHIR specification.</p>
 
+<h4 id="observation">Observation</h4>
+
+<ul>
+  <li><a href="cr-core-searchparam-observation-researchstudy.html">researchstudy</a></li>
+</ul>
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
 
-  <script type="text/javascript" src="jquery.js"> </script>
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
-
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          CR Core Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Wed, Jun 19, 2019 16:17-0400.
+          CR Core Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Thu, Jun 20, 2019 11:42-0400.
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

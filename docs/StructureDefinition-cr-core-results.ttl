@@ -17,10 +17,10 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/workflow-researchStudy" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://esource-consortium.github.io/fhir-clinical-research/cr-core-results"];
-  fhir:StructureDefinition.version [ fhir:value "0.2"];
+  fhir:StructureDefinition.version [ fhir:value "0.3"];
   fhir:StructureDefinition.name [ fhir:value "CRCoreResults"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2019-06-19T16:17:38-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2019-06-20T11:42:05-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

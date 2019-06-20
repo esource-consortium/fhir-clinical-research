@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<SearchParameter/cr-core-searchparam-observation-researchstudy> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cr-core-searchparam-observation-researchstudy"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy</b></p><p><b>name</b>: CRCoreSearchParamObservationResearchStudy</p><p><b>status</b>: DRAFT</p><p><b>description</b>: Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy</p><p><b>purpose</b>: Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.</p><p><b>code</b>: researchstudy</p><p><b>base</b>: Observation</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value</p><p><b>xpathUsage</b>: NORMAL</p><p><b>multipleOr</b>: false</p><p><b>multipleAnd</b>: false</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy"];
+  fhir:SearchParameter.version [ fhir:value "0.3"];
+  fhir:SearchParameter.name [ fhir:value "CRCoreSearchParamObservationResearchStudy"];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.date [ fhir:value "2019-06-20T11:42:05-04:00"^^xsd:dateTime];
+  fhir:SearchParameter.description [ fhir:value "Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy"];
+  fhir:SearchParameter.purpose [ fhir:value "Allows for searching of an element by ResearchStudy, typical in clinical research scenarios."];
+  fhir:SearchParameter.code [ fhir:value "researchstudy"];
+  fhir:SearchParameter.base [
+     fhir:value "Observation";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "token"];
+  fhir:SearchParameter.expression [ fhir:value "Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value"];
+  fhir:SearchParameter.xpathUsage [ fhir:value "normal"];
+  fhir:SearchParameter.multipleOr [ fhir:value "false"^^xsd:boolean];
+  fhir:SearchParameter.multipleAnd [ fhir:value "false"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<SearchParameter/cr-core-searchparam-observation-researchstudy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

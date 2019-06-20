@@ -81,10 +81,10 @@
 
     <resource>
       <reference>
-        <reference value="StructureDefinition/cr-core-searchparam-researchstudy"/>
+        <reference value="StructureDefinition/cr-core-searchparam-observation-researchstudy"/>
       </reference>
-      <name value="ResearchStudy SearchParam"/>
-      <description value="CR Core ResearchStudy Search Parameter"/>
+      <name value="Observation ResearchStudy SearchParam"/>
+      <description value="CR Core Observation ResearchStudy Search Parameter"/>
       <exampleBoolean value="false"/>
       <groupingId value="general"/>
     </resource>
@@ -113,6 +113,11 @@
       <page>
         <nameUrl value="profiles.html"/>
         <title value="CR Core Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="searchparams.html"/>
+        <title value="CR Core Search Parameters"/>
         <generation value="markdown"/>
       </page>
       <page>

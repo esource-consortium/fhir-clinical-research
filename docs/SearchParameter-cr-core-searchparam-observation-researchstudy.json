@@ -1,0 +1,24 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "cr-core-searchparam-observation-researchstudy",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>url</b>: <b>https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy</b></p><p><b>name</b>: CRCoreSearchParamObservationResearchStudy</p><p><b>status</b>: DRAFT</p><p><b>description</b>: Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy</p><p><b>purpose</b>: Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.</p><p><b>code</b>: researchstudy</p><p><b>base</b>: Observation</p><p><b>type</b>: TOKEN</p><p><b>expression</b>: Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value</p><p><b>xpathUsage</b>: NORMAL</p><p><b>multipleOr</b>: false</p><p><b>multipleAnd</b>: false</p></div>"
+  },
+  "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy",
+  "version": "0.3",
+  "name": "CRCoreSearchParamObservationResearchStudy",
+  "status": "draft",
+  "date": "2019-06-20T11:42:05-04:00",
+  "description": "Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy",
+  "purpose": "Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.",
+  "code": "researchstudy",
+  "base": [
+    "Observation"
+  ],
+  "type": "token",
+  "expression": "Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value",
+  "xpathUsage": "normal",
+  "multipleOr": false,
+  "multipleAnd": false
+}

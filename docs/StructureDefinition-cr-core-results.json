@@ -11,10 +11,10 @@
     }
   ],
   "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-results",
-  "version": "0.2",
+  "version": "0.3",
   "name": "CRCoreResults",
   "status": "draft",
-  "date": "2019-06-19T16:17:38-04:00",
+  "date": "2019-06-20T11:42:05-04:00",
   "fhirVersion": "4.0.0",
   "mapping": [
     {

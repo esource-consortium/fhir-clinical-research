@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 13, warn = 1, info = 0 -->
+<!-- broken links = 0, errors = 14, warn = 1, info = 0 -->
 <head>
   <title>Clinical Research Core Implementation Guide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Clinical Research Core Implementation Guide</h1>
- <p>Generated Wed Jun 19 16:18:17 EDT 2019, IG-Publisher Version 3.8.7-SNAPSHOT - Built 2019-06-19T14:09:39.29+10:00 - Git d43c0e0da58f. FHIR version 4.0.0 for hl7.fhir.cr-core.ig#0.2 (canonical = <a href=""></a> (<a href="/history.html">history</a>))</p>
+ <p>Generated Thu Jun 20 11:42:38 EDT 2019, IG-Publisher Version 3.8.7-SNAPSHOT - Built 2019-06-19T14:09:39.29+10:00 - Git d43c0e0da58f. FHIR version 4.0.0 for hl7.fhir.cr-core.ig#0.3 (canonical = <a href=""></a> (<a href="/history.html">history</a>))</p>
 <p><a href="#suppressed">1 Suppressed Error</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -15,11 +15,11 @@
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kochm_Code_fhir-clinical-research_src-generated_resources_cr-core-ig"><b>/Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig</b></a></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kochm_Code_fhir-clinical-research_src-generated_resources_cr-core-ig"><b>/Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig</b></a></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_kochm_Code_fhir-clinical-research_src_resources_cr-core-patient"><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-patient</b></a></td><td><b>2</b></td><td><b>0</b></td>
@@ -34,16 +34,13 @@
      <td><a href="#_Users_kochm_Code_fhir-clinical-research_src_resources_cr-core-results"><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-results</b></a></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kochm_Code_fhir-clinical-research_src_resources_cr-core-searchparam-researchstudy"><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy</b></a></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#_Users_kochm_Code_fhir-clinical-research_src_resources_cr-core-searchparam-observation-researchstudy"><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-observation-researchstudy</b></a></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy.json</b></td><td><b>error</b></td><td><b>Resource id/url mismatch: cr-core-searchparam-researchstudy/http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="_Users_kochm_Code_fhir-clinical-research_src-generated_resources_cr-core-ig"> </a>
@@ -54,6 +51,9 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide/cr-core-ig: ImplementationGuide</b></td><td><b>warning</b></td><td><b>Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/cr-core-ig: ImplementationGuide.definition.resource[5].reference</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'StructureDefinition/cr-core-searchparam-observation-researchstudy'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/Users/kochm/Code/fhir-clinical-research/src-generated/resources/cr-core-ig</b></td><td><b>error</b></td><td><b>URL Mismatch /ImplementationGuide/cr-core-ig vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig</b></td>
@@ -122,17 +122,17 @@
    </tr>
 </table>
 <hr/>
-<a name="_Users_kochm_Code_fhir-clinical-research_src_resources_cr-core-searchparam-researchstudy"> </a>
-<h2><a href="cr-core-searchparam-researchstudy.html">/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy.json</a></h2>
+<a name="_Users_kochm_Code_fhir-clinical-research_src_resources_cr-core-searchparam-observation-researchstudy"> </a>
+<h2><a href="cr-core-searchparam-observation-researchstudy.html">/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-observation-researchstudy.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy</b></td><td><b>error</b></td><td><b>conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy.json canonical URL (StructureDefinition/cr-core-searchparam-researchstudy) does not match the URL (http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy)</b></td>
+     <td><b>https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy</b></td><td><b>error</b></td><td><b>conformance resource /Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-observation-researchstudy.json canonical URL (SearchParameter/cr-core-searchparam-observation-researchstudy) does not match the URL (https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-researchstudy</b></td><td><b>error</b></td><td><b>URL Mismatch /StructureDefinition/cr-core-searchparam-researchstudy vs http://example.org/fhir/StructureDefinition/CRCore_sp_researchstudy</b></td>
+     <td><b>/Users/kochm/Code/fhir-clinical-research/src/resources/cr-core-searchparam-observation-researchstudy</b></td><td><b>error</b></td><td><b>URL Mismatch /SearchParameter/cr-core-searchparam-observation-researchstudy vs https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>

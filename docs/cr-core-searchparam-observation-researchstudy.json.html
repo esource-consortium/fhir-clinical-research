@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.CR-CORE.IG-0.2\ResearchStudy SearchParam - Examples - FHIR v4.0.0</title>
+    <title>HL7.FHIR.CR-CORE.IG-0.3\Observation ResearchStudy SearchParam - JSON Representation - FHIR v4.0.0</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -35,13 +35,13 @@
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:"5.5"}
-    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.5"}
+    h3,h4,h5,h6{--heading-prefix:"6.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
         <div id="hl7-status">
-          <b>Clinical Research Core Implementation Guide</b> 0.2 - Continuous Build 
+          <b>Clinical Research Core Implementation Guide</b> 0.3 - Continuous Build 
         </div>
     
         <div id="hl7-nav">
@@ -81,6 +81,9 @@
       <a href="profiles.html">CR Core Profiles</a>
    </li>
   <li>
+      <a href="searchparams.html">CR Core Search Parameters</a>
+   </li>
+  <li>
       <a href="security.html">Security</a>
    </li>
   <li>
@@ -98,7 +101,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>ResearchStudy SearchParam</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Observation ResearchStudy SearchParam</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -107,89 +110,59 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-<div style="counter-reset: section 6" class="col-12">
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="cr-core-searchparam-researchstudy.html">Content</a>
-    </li>
-    <li>
-      <a href="cr-core-searchparam-researchstudy-definitions.html">Detailed Descriptions</a>
-    </li>
-    <li>
-      <a href="cr-core-searchparam-researchstudy-mappings.html">Mappings</a>
-    </li>
-    <li class="active">
-      <a href="#">Examples</a>
-    </li>
-
-    <li>
-      <a href="cr-core-searchparam-researchstudy.profile.xml.html">XML</a>
-    </li>
-
-
-    <li>
-      <a href="cr-core-searchparam-researchstudy.profile.json.html">JSON</a>
-    </li>
-
-
-    <li>
-      <a href="cr-core-searchparam-researchstudy.profile.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
+<div class="col-12">
   <a name="root"> </a>
-  <h2 id="root">StructureDefinition: CRCoreSearchParamResearchStudy - Examples</h4>
+  <h2 id="root">Observation ResearchStudy SearchParam - JSON Representation</h2>
+  <p>
+    <a href="cr-core-searchparam-observation-researchstudy.html">(back to narrative)</a>
+  </p>
+  <p>
+    <a href="SearchParameter-cr-core-searchparam-observation-researchstudy.json">Raw json</a>
+  </p>
   
   
   
-
-
-  <p><b>No examples are currently available for the  Profile.</b></p>
+  <pre class="json">
+{
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.id">id</a>" : "cr-core-searchparam-observation-researchstudy",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;b&gt;https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: CRCoreSearchParamObservationResearchStudy&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: DRAFT&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy&lt;/p&gt;&lt;p&gt;&lt;b&gt;purpose&lt;/b&gt;: Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: researchstudy&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: Observation&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: TOKEN&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value&lt;/p&gt;&lt;p&gt;&lt;b&gt;xpathUsage&lt;/b&gt;: NORMAL&lt;/p&gt;&lt;p&gt;&lt;b&gt;multipleOr&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;multipleAnd&lt;/b&gt;: false&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.url">url</a>" : "https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.version">version</a>" : "0.3",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.name">name</a>" : "CRCoreSearchParamObservationResearchStudy",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.status">status</a>" : "draft",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.date">date</a>" : "2019-06-20T11:42:05-04:00",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.description">description</a>" : "Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.purpose">purpose</a>" : "Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.code">code</a>" : "researchstudy",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.base">base</a>" : [
+    "Observation"
+  ],
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.type">type</a>" : "token",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.expression">expression</a>" : "Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.xpathUsage">xpathUsage</a>" : "normal",
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.multipleOr">multipleOr</a>" : false,
+  "<a href="http://build.fhir.org/searchparameter.html#SearchParameter.multipleAnd">multipleAnd</a>" : false
+}</pre>
 
 
   
   
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
 
-  <script type="text/javascript" src="jquery.js"> </script>
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
-
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          CR Core Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Wed, Jun 19, 2019 16:17-0400.
+          CR Core Implementation Guide &#169; 2018+ Clinical Research Core Implementation Guide. Based on FHIR version <a style="color: #81BEF7" href="http://build.fhir.org/">(4.0.0</a>).  IG generated on Thu, Jun 20, 2019 11:42-0400.
           <br/>
           <span style="color: #FFFF77">
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -10,10 +10,10 @@
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/workflow-researchStudy"/>
   <url value="https://esource-consortium.github.io/fhir-clinical-research/cr-core-results"/>
-  <version value="0.2"/>
+  <version value="0.3"/>
   <name value="CRCoreResults"/>
   <status value="draft"/>
-  <date value="2019-06-19T16:17:38-04:00"/>
+  <date value="2019-06-20T11:42:05-04:00"/>
   <fhirVersion value="4.0.0"/>
   <mapping>
     <identity value="workflow"/>

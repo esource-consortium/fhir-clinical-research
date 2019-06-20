@@ -1,12 +1,12 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.cr-core.ig-0.2",
+  "id": "hl7.fhir.cr-core.ig-0.3",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Clinical Research Core Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig</pre><div><p>This implementation guide is based on HL7 FHIR and defines the minimum conformance requirements necessary for exchanging clinical trial data. Typically, this exchange will be between a clinical trial site and a clinical trial sponsor.</p>\n</div></div>"
   },
   "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-ig",
-  "version": "0.2",
+  "version": "0.3",
   "name": "Clinical Research Core Implementation Guide",
   "status": "draft",
   "experimental": false,
@@ -107,17 +107,11 @@
         "groupingId": "general"
       },
       {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "cr-core-searchparam-researchstudy.html"
-          }
-        ],
         "reference": {
-          "reference": "StructureDefinition/cr-core-searchparam-researchstudy"
+          "reference": "StructureDefinition/cr-core-searchparam-observation-researchstudy"
         },
-        "name": "ResearchStudy SearchParam",
-        "description": "CR Core ResearchStudy Search Parameter",
+        "name": "Observation ResearchStudy SearchParam",
+        "description": "CR Core Observation ResearchStudy Search Parameter",
         "exampleBoolean": false,
         "groupingId": "general"
       }
@@ -140,6 +134,11 @@
         {
           "nameUrl": "profiles.html",
           "title": "CR Core Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchparams.html",
+          "title": "CR Core Search Parameters",
           "generation": "markdown"
         },
         {
@@ -173,8 +172,8 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "cr-core-searchparam-researchstudy.html",
-              "title": "ResearchStudy SearchParam",
+              "nameUrl": "cr-core-searchparam-observation-researchstudy.html",
+              "title": "Observation ResearchStudy SearchParam",
               "generation": "generated"
             }
           ]

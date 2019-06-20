@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "cr-core-searchparam-observation-researchstudy",
+  "url": "https://esource-consortium.github.io/fhir-clinical-research/cr-core-searchparam-observation-researchstudy",
+  "name": "CRCoreSearchParamObservationResearchStudy",
+  "status": "draft",
+  "description": "Allows a consumer to query observations based on a research study, as defined by the element extension http://hl7.org/fhir/StructureDefinition/workflow-researchStudy",
+  "purpose": "Allows for searching of an element by ResearchStudy, typical in clinical research scenarios.",
+  "code": "researchstudy",
+  "base": [
+    "Observation"
+  ],
+  "type": "token",
+  "expression": "Observation.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value",
+  "xpathUsage": "normal",
+  "multipleOr": false,
+  "multipleAnd": false
+}
